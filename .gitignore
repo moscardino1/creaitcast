@@ -1,0 +1,8 @@
+venv
+new_venv
+Config_files
+__pycache__
+TestScripts
+.env
+output
+token.pickle

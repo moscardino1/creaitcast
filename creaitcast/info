@@ -1,2 +1,44 @@
 python3 -m venv venv
 source venv/bin/activate
+
+cd creaitcast
+source new_venv/bin/activate
+cd Genscript
+python genscriptlocal.py
+
+
+FLOW 
+    GenScript.py --> parse article from  website, summarize them and put them in output.txt
+        output.txt
+    go on Poe.Com and  --> 
+        can you create a podcast script around these topics for today to caught me up with the world? 
+        the podcast is cronisphere and this is the #76 episode. Pls just create the script without titles.
+        The output will be inputted in a script that will just generate the voice out of it. {output.txt}
+    Generate Audio
+        oppure on colab: https://colab.research.google.com/drive/1N3IOGFm_ZAMfoCwbznubfBFdlSe1IiFQ?authuser=0#scrollTo=jj_v5Y50q9s7
+            upload my voice first.
+    Generate Video
+
+Please give me the title of the episode to use on youtube, the description and the short tweet to get a lot of interactions about this podcast.I will add the link so keep it short 
+
+
+
+python GenAudioPod.py       
+
+'tts_models/it/mai_female/glow-tts', 
+'tts_models/it/mai_female/vits', 
+'tts_models/it/mai_male/glow-tts', 
+'tts_models/it/mai_male/vits', 
+
+I am actually working on a podcast generated automatically via AI. 
+First I run a python script on local (cursor vscode) which is first creating a file with a summary of ten articles. (genscriptlocal.py attached)
+Then I paste this in Chat GPT/POE and ask to create a podcast script out of it. This is because I don't want to subscribe to ani Paid API.
+The input prompt is something like this: 
+"        can you create a podcast script around these topics for today to caught me up with the world? 
+        the podcast is cronisphere and this is the #76 episode. Pls just create the script without titles.
+        The output will be inputted in a script that will just generate the voice out of it. {output.txt}"
+Then I copy paste the output in this variable on google colab to create an audio out of it. I would do it locally but I don't have any GPU.
+From this script I get a video. (notebook.py) I download the mp4 and upload manually on youtube.
+Title and description is by chatgpt/poe as well. 
+
+I want to automate all of this without paying any API as I am doing now. I want to be able just to run a button and not doing all these manual steps. Ideas?
