@@ -28,12 +28,12 @@ def main():
     create_folders(podcast_number)
 
     steps = [
-        # "1_parse_articles.py",
-        # "2_summarize_articles.py",
-        # "3_create_podcast_script.py",
-        # "4_generate_audio.py",
-        # "5_create_video.py",
-        # "6_upload_to_youtube.py"
+        "1_parse_articles.py",
+        "2_summarize_articles.py",
+        "3_create_podcast_script.py",
+        "4_generate_audio.py",
+        "5_create_video.py",
+        "6_upload_to_youtube.py"
     ]
 
     for step in steps:

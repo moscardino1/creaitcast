@@ -6,6 +6,11 @@ source new_venv/bin/activate
 cd Genscript
 python genscriptlocal.py
 
+cd creaitcast
+source new_venv/bin/activate
+cd Main
+python main.py
+
 
 FLOW 
     GenScript.py --> parse article from  website, summarize them and put them in output.txt
