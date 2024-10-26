@@ -81,6 +81,7 @@ async def main(podcast_number, num_articles):
             script_content = f.read()
         
         # You can customize the voice here
+        # voice = "it-IT-IsabellaNeural" #"en-US-ChristopherNeural"  # Male voice
         voice = "en-US-ChristopherNeural"  # Male voice
         
         await text_to_speech(script_content, filename=output_file, voice=voice)

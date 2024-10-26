@@ -31,7 +31,7 @@ def fetch_articles(num_articles):
                                           q=query,
                                           language='en',
                                           sort_by='relevancy',#'popularity',#'publishedAt',#'relevancy',
-                                          from_param=yesterday,#2024-09-24',#yesterday,
+                                          from_param=yesterday,#'2024-09-24',#yesterday,
                                           to=today,
                                           page_size=num_articles)
         
