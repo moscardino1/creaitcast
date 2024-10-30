@@ -22,14 +22,14 @@ def run_script(script_name, podcast_number, num_articles):
     return True
 
 def main():
-    podcast_number = 16 #int(input("Enter the podcast number: "))
-    num_articles = 10 #int(input("Enter the number of articles to process: "))
+    podcast_number = 20 #int(input("Enter the podcast number: "))
+    num_articles = 13 #int(input("Enter the number of articles to process: "))
     create_folders(podcast_number)
     steps = [
-        # "1_parse_articles.py",
-        # "2_summarize_articles.py",
-        # "3_create_podcast_script.py",
-        # "4_generate_audio.py",
+        "1_parse_articles.py",
+        "2_summarize_articles.py",
+        "3_create_podcast_script.py",
+        "4_generate_audio.py",
         "5_create_video.py",
         "6_upload_to_youtube.py"
     ]

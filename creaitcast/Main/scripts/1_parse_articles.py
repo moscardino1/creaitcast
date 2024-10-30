@@ -23,7 +23,7 @@ def fetch_articles(num_articles):
     # Calculate date range for yesterday
     today = datetime.now().date()
     yesterday = today - timedelta(days=1)
-    query='bitcoin'
+    query='Bitcoin'
     logger.info(f"Fetching {query}-related articles from NewsAPI for {yesterday}")
     
     try:

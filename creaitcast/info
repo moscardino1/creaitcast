@@ -2,12 +2,12 @@ python3 -m venv venv
 source venv/bin/activate
 
 cd creaitcast
-source new_venv/bin/activate
+source venv/bin/activate
 cd Genscript
 python genscriptlocal.py
 
 cd creaitcast
-source new_venv/bin/activate
+source venv/bin/activate
 cd Main
 python main.py
 
